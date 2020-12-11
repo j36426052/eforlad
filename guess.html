@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>猜數字</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var answer = Math.floor(Math.random()*10+1);
+		var guess = window.prompt("輸入你猜的數字");
+		guess = parseInt(guess);
+		while(answer != guess){
+			guess = window.prompt("猜錯了,再猜一次");
+		}
+		alert("你答對了！！");
+
+	</script>
+
+</body>
+</html>
